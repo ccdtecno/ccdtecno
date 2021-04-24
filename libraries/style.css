@@ -47,12 +47,13 @@ body {
 
 
   header {
-    display: inline-grid;
+    display: inline-block  ;
     width: 100%;
-    min-width: 320px;
+    min-width: 340px;
     justify-items: center;
     background: var(--dark-green);
-    /* padding:0 1rem; */
+    /* padding:0 0.5rem; */
+    /* padding: 4px; */
     grid-column: 1 / 4;
   }
   
@@ -77,13 +78,20 @@ body {
   }
 
   .header-navbar .item:nth-child(3) {
-    /* margin-right: 8px */
-    margin-right: 24px;
+    
+    /* margin-right: 24px; */
   } 
-  .item h1{
-    font-size: 3rem;
+
+  .header-navbar .item:nth-child(3) img{
+    width: 56px;
+    margin-right: 24px;
+    padding-right: 4px;
+  } 
+
+  .header-navbar .item:nth-child(2) h1{
+    font-size: 32pt;
     font-weight: 400;
-    line-height: 2.6rem;
+    line-height: 8pt;
     /* width: 20%; */
     text-align: center;
     /* letter-spacing: 1px; */
@@ -107,7 +115,7 @@ body {
       text-align: center;
       grid-column: 2 / 3;
       margin-top: 2rem;
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
       background:var(--warm-white);
       /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.45); */
     }
@@ -121,26 +129,32 @@ body {
     }
     
     .main__hero--title {
+      display: inline-block;
+      width: 90%;
+      min-width: 280px;
       padding-bottom: 1rem;
-      font-size: 3.4rem;
+      font-size: 2.2rem;
       color: var(--dark-green);
     }
     .main__hero--subtitle {
       display: inline-block;
       padding: 1rem;
-      width: 60%;
-      font-size: 1.4rem;
+      width: 90%;
+      font-size: 1.2rem;
       color: var(--medium-green);
     }
 
     .main__hero--space {
-      font-size: 1rem;
+      display: inline-block;
+      width: 80%;
+      font-size: 0.8rem;
       color: var(--grey)
     }
 
     .carousel {
       display: inline-flex;
-      height: 50vh;
+      height: 60vh;
+      padding: 1rem 0.5rem;
       white-space: nowrap;
       /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.45); */
       
@@ -201,21 +215,24 @@ body {
 
   footer {
     background: var(--dark-green);
+    min-width: 340px;
     padding: 0.5rem 0.5rem;
     text-align: center;
     grid-column: 1 / 4;
   }
 
   .footer-table {
-      display: inline-grid; 
-      width: 90%;
-      grid-template-columns: auto 1fr auto;   
+      display: inline-flex; 
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 0.5rem;
       place-items: center;
       font-size: .8rem;
   }
   
   .footer-table--icons {
     display: inline-grid;
+    justify-self: left;
     grid-template-columns: repeat(3,1fr);
     grid-auto-columns: min-content;
     column-gap: 8px;
