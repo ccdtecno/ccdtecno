@@ -123,7 +123,7 @@ body {
     .main__hero--container {
       width: 100vw;
       overflow: scroll;
-      padding:2rem;
+      /* padding:1rem; */
       position: relative;
       /* background: #2A9D8F; */
     }
@@ -133,11 +133,12 @@ body {
       width: 90%;
       min-width: 280px;
       padding-bottom: 1rem;
-      font-size: 2.2rem;
+      font-size: 2.6rem;
       color: var(--dark-green);
     }
     .main__hero--subtitle {
       display: inline-block;
+      margin: 1rem 0;
       padding: 1rem;
       width: 90%;
       font-size: 1.2rem;
@@ -148,13 +149,14 @@ body {
       display: inline-block;
       width: 80%;
       font-size: 0.8rem;
-      color: var(--grey)
+      color: var(--grey);
+      margin-bottom: 1rem;
     }
 
     .carousel {
       display: inline-flex;
       height: 60vh;
-      padding: 1rem 0.5rem;
+      padding: 1rem 1rem;
       white-space: nowrap;
       /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.45); */
       
@@ -167,7 +169,7 @@ body {
       outline: none;
       border:none;
 
-      margin: 8px;
+      margin: 2rem 8px;
       padding: 1rem;
       /* width: 520px; */
       height: 380px;
