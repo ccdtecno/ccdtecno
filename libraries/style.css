@@ -77,6 +77,11 @@ body {
 
   }
 
+  .header-navbar .item:nth-child(3) img:hover{
+    border-radius: 8px;
+    box-shadow:0px 4px 8px var(--warm-black);
+  }
+  
 
   .header-navbar .item:nth-child(3) img{
     width: 48px;
@@ -277,6 +282,12 @@ body {
     width: 40px;
     height: 40px;  
  } 
+
+ .footer-table--icons span:hover{
+  /* border: 2px solid white; */
+  border-radius: 8px;
+  box-shadow:0 2px 4px var(--warm-black);
+} 
 
  .footer-table--icons span:nth-child(1){
     background-image: url('/assets/icons/githubLightNOBG.svg');
