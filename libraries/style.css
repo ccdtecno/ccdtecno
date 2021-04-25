@@ -1,7 +1,7 @@
 :root {
     /* Colores */
     --dark-green: #044317;
-    --medium-green: #6FDC8C;
+    --medium-green: #5eb475;
     --soft-green: #DEFBE6;
     --primary-blue: #0F62FE;
     --secondary-blue: #78A9FF;
@@ -17,7 +17,7 @@
     --off-white: #F4F4F4;
     --cold-white: #F2F4F8;
     
-    --grey: #C6C6C6;
+    --grey: #bbb9b9;
     --white: #FFFFFF;
     --black: #000;
 
@@ -180,7 +180,8 @@ body {
       display: inline-block;
       width: 80%;
       font-size: 0.8rem;
-      color: var(--grey);
+
+      color: var(--warm-black);
       margin-bottom: 1rem;
     }
 
@@ -292,12 +293,24 @@ body {
     background-size: cover;
  } 
 
-  .footer-table--text {
-    display: grid;
-    text-align: center;
-    color: var(--warm-white);
-    padding:0 24px;
-  }
+ .footer-table--text {
+  display: grid;
+  text-align: center;
+  padding:0 24px;
+  color: var(--white);
+  font-weight: 300;
+}
+
+.footer-table--text a{
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.footer-table--text a:hover{
+  text-decoration: underline;
+}
+
   .footer-table--logo img{
     display: grid;
     height: 32px;
