@@ -6412,6 +6412,14 @@ button.close {
   text-align: center;
 }
 
+.link-carousel {
+  color: #fff;
+}
+
+.carousel-item a {
+  color: #fff;
+}
+
 .align-baseline {
   vertical-align: baseline !important;
 }
